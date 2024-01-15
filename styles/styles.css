@@ -1,0 +1,131 @@
+*{
+    margin: 1%;
+    outline: none;
+    margin-right: 1%;
+    font-family: Mulish;
+    
+}
+ul>li {
+    color: #000;
+    
+    list-style: none ;
+    
+}
+a{
+    text-decoration: none;
+}
+    
+
+.body{
+    margin: auto;
+    width: 100%;
+    
+    
+}
+.summary{
+    display: inline-flex;
+}
+.img-1{
+    width: 4rem;
+    height: 4.5rem;
+    margin: auto;
+}
+.happy{
+    color: #131318;
+    font-size: 3.25rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    font-family: Mulish;
+
+}
+.journey{
+    color: #ff5400;
+    font-size: 3.25rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+
+}
+.menu{
+    display: flex;
+
+}
+.menu-item{
+    display: flex;
+    margin-left: 40%;
+    margin-right: 1%;
+    gap: 20px;
+}
+
+.favicon{
+    display: none;
+}
+
+    
+
+
+
+.menu img {
+    height: 30px;
+    width: 30px;
+}
+
+header{
+    /* font-family: var(--font-poppins); */
+}
+.menu h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.menu li{
+    color: var(--derk-02, #424247);
+    margin-left: 30px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+/* responsive mobile device */
+@media screen and (max-width: 600px) {
+    .body{
+        margin: 35px 35px;
+    }
+    .fa-solid{
+        display: block;
+        cursor: pointer;
+        margin-left: 50px;
+        margin-top: 15px;
+    }
+    .menu ul{
+        flex-direction: column;
+        top: 100px;
+        margin-top: 10%;
+    }
+    .hidden{
+        display: none;
+    }
+    .menu-item{
+        flex-direction: column;
+    }
+    .fa-solid:focus ~ div ul{
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .fa-solid:focus ~ div ul li.hidden{
+        display: block;
+    }
+    
+}
