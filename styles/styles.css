@@ -307,6 +307,24 @@ form {
     line-height: 26px;
 }
 /* -----five-star hotel in cox's bazer--------- */
+.tourist-container{
+    text-align: center;
+    
+}
+.tourist-title{
+    font-size: 70px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.tourist-title span{
+    color: #FF5400;
+    font-style: italic;
+    font-size: 70px;
+    font-weight: 700;
+}
+.tourist-description{
+
+}
 .hotel-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
