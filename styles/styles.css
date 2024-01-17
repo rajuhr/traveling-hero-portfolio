@@ -74,9 +74,9 @@ a {
     gap: 20px;
 }
 
-/* .favicon {
+.favicon {
     display: none;
-} */
+}
 
 
 
@@ -306,6 +306,70 @@ form {
     font-weight: 400;
     line-height: 26px;
 }
+/* -----five-star hotel in cox's bazer--------- */
+.hotel-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    gap: 20px;
+
+}
+.hotel-title{
+
+}
+.hotel-card-info{
+    border: 2px solid yellow;
+    border-radius: 15px;
+    background-color:springgreen;
+    padding: 40px;
+}
+.hotel-card-info>img{
+    border-radius: 15px;
+    width: 50%;
+
+}
+.location-hotel{
+    display: flex;
+}
+.one-night{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.location-hotel>i{
+    color:blueviolet;
+    font-size: 2rem;
+}
+
+.five-star>i{
+    color: darkorange;
+    font-size: 2rem;
+}
+.icon-color-1{
+    color: #FF5400;
+    background-color:greenyellow;
+    border-radius: 100px;
+    font-size: 3rem;
+    font-weight: 700;
+    border: 20px;
+    padding: 25px;
+    position: absolute;
+    top: 20%;
+    
+    
+    
+}
+.icon-color{
+    background-color: #FF5400;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 20px;
+    
+}
+
 /*--------------- winter vacation--------------- */
 .winter-vacation-main-container{
     display: flex;
@@ -322,11 +386,12 @@ form {
     box-shadow: box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
 
 }
-.popular-content{
+.popular-contents{
     padding: 30px;
     border: 1px solid black;
     border-radius: 20px;
     width: 50%;
+    height: 50%;
 }
 
 /* ---------------Our Popular tour----------------- */
@@ -381,7 +446,7 @@ form {
 }
 .popular-content{
     height: 500px;
-    width: 50%;
+     
 }
 
 .choose-card-details {
@@ -589,6 +654,12 @@ hr {
         margin-left: 50px;
         margin-top: 15px;
     }
+    .favicon {
+        display: block;
+        font-weight: 600;
+        font-size: 25px;
+        margin-right: 8px;
+    }
 
     .menu ul {
         flex-direction: column;
@@ -628,6 +699,9 @@ hr {
     form {
         flex-direction: column;
         gap: 1rem;
+        margin-left: 40px;
+        
+        
     }
 
     .our-popular-section {
@@ -645,16 +719,16 @@ hr {
     }
 
     .popular-image-rectangle {
-        width: 450px;
-        padding-left: 20px;
+        width: auto;
         align-items: center;
         
     }
+    /* ----special footer section------ */
 
     hr {
 
         width: 50%;
-        margin-left: 20px;
+        margin-left: 70px;
     }
 
     .footer-section {
@@ -662,12 +736,38 @@ hr {
         
         padding: 10px;
     }
+    /* -----hotel cox's bazer----- */
+
+    .hotel-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .location-hotel{
+        flex-direction: column;
+    }
+    .five-star>i{
+        font-size: 30px;
+        
+        width: 20px;
+
+    }
+    .icon-color-1{
+        right: 5px;
+        top: 5px;
+        font-size: 18px;
+        color: #FFF;
+        background-color: #FF5400;
+       
+    }
+    .location-hotel>i{
+        font-size: 50px;
+        padding-right: 20px;
+    }
 /* -----newspaper-section--------- */
     .Newspapper-main-container {
         flex-direction: column;
         padding: 20px;
         width: 100%;
-        /* margin-right: 120px; */
         gap: 15px;
         margin-left: 0%;
     }
@@ -687,11 +787,9 @@ hr {
     .newspapper-section {
         margin-right: 0;
         padding: 15px;
-        width: 400px;
+        width: auto;
     }
-    .newspapper-sub-section button{
-        
-    }
+    
 /* -------------choose section----- */
     .card-description {
         flex-direction: column;
@@ -699,12 +797,13 @@ hr {
 
     .choose-card-container {
         width:100%;
-        padding: 15px;
+        
     }
 
     .card-info-1 {
         width: 100%;
         margin-left: 10px;
+        padding: 0%;
     }
     .hotel-cart{
         margin-top: 20px;
@@ -712,24 +811,27 @@ hr {
 
     .card-info-2 {
         width: 400px;
+        padding: 0%;
     }
 
     .card-info-3 {
-        margin-left: 5px;
+        margin-left: 8px;
         width: 400px;
+        padding: 0%;
     }
 /* -----destinaton-part----- */
     .destination-container {
-        
-        padding-left:10px;
         margin-bottom: 0%;
         padding-bottom: 0%;
-        /* width: 24rem; */
         padding: 20px;
        
     }
     .row-1, .row-2, .row-3{
         flex-direction: column;
+        
+    }
+    .bandorban, .indonesia, .srilanka, .america, .kasmir, .bangladesh, .maldivs{
+        width: 0;
     }
 
     .choose-1 {
@@ -747,6 +849,24 @@ hr {
     }
     .winter-vacation-main-container{
         flex-direction: column;
+        margin-left: 0;
+        width: 100%;
     }
+    .winter-image img{
+        margin: 0%;
+    }
+    .popular-content{
+        width: 0%;
+    }
+    .popular-contents{
+        width: auto;
+        padding-left: 10px;
+    }
+    .newspapper-sub-section button{
+        top: 55%;
+        left: 55%;
+    }
+
+    
 
 }
